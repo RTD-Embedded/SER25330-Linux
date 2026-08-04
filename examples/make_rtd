@@ -1,0 +1,56 @@
+#
+#	FILE NAME: Makefile
+#
+#	FILE DESCRIPTION: Make description file for building example programs
+#
+#	PROJECT NAME: Linux Software (SER25330)
+#
+#	PROJECT VERSION: (Defined in README.TXT)
+#
+#	This file and its contents are copyright (C) RTD Embedded Technologies,
+#	Inc.  All Rights Reserved.
+#
+#	This software is licensed as described in the RTD End-User Software
+#	License Agreement.  For a copy of this agreement, refer to the file
+#	LICENSE.TXT (which should be included with this software) or contact RTD
+#	Embedded Technologies, Inc.
+#
+
+
+#
+CC=gcc
+DEBUG_FLAGS=
+INCLUDE_FLAGS=-I../include
+LIBRARY_FLAGS=-L../lib -lrtd-ser25330
+OPTIMIZE_FLAGS=-O6
+WARNING_FLAGS=-Wall
+CFLAGS:=$(DEBUG_FLAGS) $(INCLUDE_FLAGS) $(OPTIMIZE_FLAGS) $(WARNING_FLAGS)
+
+MY_CFLAGS := -I$(shell pwd)/../include -g
+
+FILES_TO_CLEAN= \
+	*.o \
+	exar_rtd.ko \
+	.*.cmd \
+	*.ko \
+	.tmp_versions \
+	exar_rtd.mod.c \
+	.*.d \
+	*.symvers \
+	*.order \
+    *.markers \
+	*~
+
+
+all:	config-example-rtd
+
+config-example-rtd:	config-example-rtd.o 
+	$(CC) -o config-example-rtd config-example-rtd.o $(LIBRARY_FLAGS)
+
+config-example-rtd.o:	config-example.c	 
+	$(CC) -c $(CFLAGS) config-example.c -o config-example-rtd.o
+
+clean:
+	rm -rf *.o config-example-rtd
+
+

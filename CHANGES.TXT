@@ -1,0 +1,35 @@
+Change log for SWP-700010119 rev D
+
+Linux Software (SERx5330)
+
+
+
+v01.00.00 (rev A)   4/30/2012  RGG
+-----------------------------------
+ - Initial version
+ 
+   
+v01.01.00 (rev B)  11/16/2015  RGG
+-----------------------------------
+ - Changed port references from "1 to 8" to "0 to 7" to avoid confusion
+   with the port numbering done by Linux.
+ - Added function to get value of User ID Jumper.  Requires rev. 2 board.
+
+v02.00.00 (rev C)  05/29/2019  AAM
+-----------------------------------
+- Modified the driver to access the GPIO of a SERx5330 which already has
+  a driver installed in the kernel for general serial access.
+- Some minor library changes
+- New library to work with kernel included GPIO driver , which is available
+  after kernel 4.11 .
+- Original v01.01.00 Library included as a sub package for legacy customer
+  usage.
+
+v02.01.00 (rev D)  05/19/2021  KRK
+-----------------------------------
+- Added library support for for the new GPIO V2 kernel library that
+  replaced (soon to be deprecated) V1 in kernel versions 5.11 and 
+  newer.
+- Updated the example program to comply to c89 standards and 
+  compile without warning 
+- added additional documentation for setting RTS flow control in the example
