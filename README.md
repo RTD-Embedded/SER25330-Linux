@@ -36,6 +36,8 @@ This software supports the following boards:
 
 - [SER25330](https://www.rtd.com/PC104/UM/network/SERx5330.htm)
 - [SER35330](https://www.rtd.com/PC104/UM/network/SERx5330.htm)
+- [SER35220](https://www.rtd.com/PC104/UM/network/SERx5320.htm)
+- [SER35320](https://www.rtd.com/PC104/UM/network/SERx5320.htm)
 
 
 ## Supported Kernel Versions
