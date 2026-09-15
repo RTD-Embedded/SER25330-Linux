@@ -229,12 +229,12 @@ SER25330_Linux_v01.01.00.tar.gz
 If you require additional support with this product, or any other products from
 RTD Embedded Technologies, contact us using the information below:
 
-	RTD Embedded Technologies, Inc.
-	103 Innovation Boulevard
-	State College, PA 16803 USA
+RTD Embedded Technologies, Inc.\
+103 Innovation Boulevard\
+State College, PA 16803 USA
 
-	Telephone: (814) 234-8087
-	Fax: (814) 234-5218
-	Sales Information and Quotes: sales@rtd.com
-	Technical Assistance: techsupport@rtd.com
-	Web Site: http://www.rtd.com
+Telephone: (814) 234-8087\
+Fax: (814) 234-5218\
+Sales Information and Quotes: sales@rtd.com\
+Technical Assistance: techsupport@rtd.com\
+Web Site: http://www.rtd.com
